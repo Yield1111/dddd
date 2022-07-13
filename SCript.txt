@@ -2072,7 +2072,7 @@ end)
 
 
 
-TrollSection:NewButton("Audio fucker", "Green = client sided Red = server sided ", function()
+TrollSection:NewButton("Audio fucker", "Red = client sided  Green = server sided ", function()
 local ScreenGui = Instance.new("ScreenGui")
 local Draggable = Instance.new("Frame")
 local Frame = Instance.new("Frame")
@@ -3491,3 +3491,9 @@ closeButton.MouseButton1Click:Connect(function()
 	end
 	ultimateFling:Destroy()
 end)
+end)
+
+
+TrollSection:NewButton("Dark Dex", 🤓🤓🤡🤡💯", function()
+    loadstring(game:HttpGet("https://gist.githubusercontent.com/DinosaurXxX/b757fe011e7e600c0873f967fe427dc2/raw/ee5324771f017073fc30e640323ac2a9b3bfc550/dark%2520dex%2520v4"))()
+end
