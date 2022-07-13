@@ -3501,11 +3501,23 @@ end)
 
 
 
-TrollSection:NewToggle("Walk on walls", "If the off switch doesn't work then reset manually", function(state)
+TrollSection:NewToggle("Walk on walls", "If the off switch doesn't work then reset", function(state)
     if state then
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Yield1111/Walk-on-walls/main/walk%20on%20walls"))()
     else
-        game.Players.LocalPlayer.Character.Humanoid.Health = 0
+        game.Players.LocalPlayer.Character.Humanoid.Name = 1
+local l = game.Players.LocalPlayer.Character["1"]:Clone()
+l.Parent = game.Players.LocalPlayer.Character
+l.Name = "Humanoid"
+wait()
+game.Players.LocalPlayer.Character["1"]:Destroy()
+game.Workspace.CurrentCamera.CameraSubject = game.Players.LocalPlayer.Character
+game.Players.LocalPlayer.Character.Animate.Disabled = true
+wait()
+game.Players.LocalPlayer.Character.Animate.Disabled = false
+game.Players.LocalPlayer.Character.Humanoid.DisplayDistanceType = "None"
+    end
+end)
     
 
 
