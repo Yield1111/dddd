@@ -2065,7 +2065,7 @@ end)
 
 
 
-TrollSection:NewButton("Detach ur body", "Also makes ur jacket bug out if u have one equipped", function()
+TrollSection:NewButton("Detach ur body R15", "Also makes ur jacket bug out if u have one equipped", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/ant-7802/--/main/get.real'))()
 end)
 
